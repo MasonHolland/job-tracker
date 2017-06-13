@@ -1,0 +1,9 @@
+New Comment for Job: <%= @job.title %> at Company: <%= @job.company.name %>
+<%= form_for [@job.company, @job, @comment] do |f| %>
+
+  <%= f.label :body %>
+  <%= f.text_field :body %>
+
+  <%= f.submit %>
+
+<% end %>

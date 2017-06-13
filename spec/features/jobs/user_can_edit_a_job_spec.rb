@@ -11,7 +11,7 @@ RSpec.describe "User edits a job" do
     fill_in "job[description]", with: "Not fun!"
     fill_in "job[level_of_interest]", with: 20
     fill_in "job[city]", with: "Perth"
-    save_and_open_page
+    
     click_button "Update Job"
 
     expect(current_path).to eq("/companies/#{company.id}/jobs/#{job.id}")
