@@ -3,7 +3,6 @@ class JobsController < ApplicationController
     @company = Company.find(params[:company_id])
     @jobs = @company.jobs
     @contact = Contact.new
-
   end
 
   def new

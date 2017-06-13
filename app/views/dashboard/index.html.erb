@@ -1,0 +1,11 @@
+Jobs by city
+
+<ul>
+  <% @jobs.each do |job| %>
+    <li>
+      City: <%= job.city %><br>
+      Title: <%= job.title %><br>
+      Company: <%= job.company.name %><br>
+    </li>
+  <% end %>
+</ul>
